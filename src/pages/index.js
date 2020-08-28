@@ -35,16 +35,16 @@ const IndexPage = () => (
       <div className="inner">
         <header className="major">
           <h2>
-            Arcu aliquet vel lobortis ata nisl
+            A few words about me
             <br />
-            eget augue amet aliquet nisl cep donec
           </h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
-            <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
+            I am Ajay, I am a final year student of computer engineering. I
+            started programming when I was 16 years old and fell in love with it
+            ever since. I have worked in my family business as a web developer
+            for last 8 years, in those times I worked on plenty of web designing
+            project to propel my passion for full stack web development. I have
+            been learning AI from past 1 year and love making projects on it.
           </p>
         </header>
         <ul className="icons major">
