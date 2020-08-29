@@ -214,7 +214,7 @@ html {
 
 body,
 .main-body {
-  background: #000000;
+  background: #141414;
 
   // Stops initial animations until page loads.
   &.is-preload {
@@ -231,7 +231,7 @@ body,
 input,
 select,
 textarea {
-  color: _palette(fg);
+  color: #f65058ff;
   font-family: _font(family);
   font-size: 15pt;
   font-weight: _font(weight);
@@ -290,7 +290,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: _palette(fg-bold);
+  color: #f65058ff;
   font-weight: _font(weight-extrabold);
   letter-spacing: _size(letter-spacing-alt);
   line-height: 1em;
@@ -1085,12 +1085,15 @@ button,
   }
 
   &.primary {
-    background-color: _palette(accent6, bg);
+    background-color: inherit;
+    border: white 2px solid;
     box-shadow: none !important;
-    color: _palette(accent6, fg-bold) !important;
+    color: #f65058ff;
 
     &:hover {
-      background-color: lighten(_palette(accent6, bg), 5) !important;
+      background-color: #28334aff;
+      color: white;
+      border: 2px #f65058ff solid;
     }
 
     &:active {

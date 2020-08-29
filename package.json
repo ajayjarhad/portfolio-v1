@@ -1,5 +1,5 @@
 {
-  "name": "Ajay Jarhad | Portfolio",
+  "name": "ajay_jarhad_portfolio",
   "version": "1.0.0",
   "description": "Gatsby.js V2 starter template based on Spectral by HTML5 UP",
   "repository": {
@@ -7,8 +7,8 @@
     "url": "git+https://github.com/anubhavsrivastava/gatsby-starter-spectral.git"
   },
   "author": {
-    "name": "Anubhav Srivastava",
-    "email": "anubhav.srivastava00@gmail.com"
+    "name": "Ajay Jarhad",
+    "email": "ajayjarhad@gmail.com"
   },
   "dependencies": {
     "gatsby": "^2.20.2",
@@ -40,12 +40,8 @@
   },
   "keywords": [
     "gatsby",
-    "gatsby-starter",
-    "gatsby-starter-spectral"
+    "Ajay Jarhad",
+    "Portfolio"
   ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/anubhavsrivastava/gatsby-starter-spectral/issues"
-  },
-  "homepage": "https://github.com/anubhavsrivastava/gatsby-starter-spectral#readme"
+  "homepage": "https://github.com/ajayjarhad/"
 }
