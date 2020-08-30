@@ -8,13 +8,14 @@ import pic1 from '../assets/images/pic01.jpg';
 import pic2 from '../assets/images/pic02.jpg';
 import pic3 from '../assets/images/pic03.jpg';
 import config from '../../config';
+import OppositeContentTimeline from '../components/timeline';
 const IndexPage = () => (
   <Layout>
     <section id="banner">
       <div className="inner">
         <h2>{config.heading}</h2>
         <p>{config.subHeading}</p>
-        <ul className="actions special">
+        {/* <ul className="actions special">
           <li>
             <Scroll type="id" element="one">
               <a href="/#" className="button primary">
@@ -22,11 +23,11 @@ const IndexPage = () => (
               </a>
             </Scroll>
           </li>
-        </ul>
+        </ul> */}
       </div>
       <Scroll type="id" element="one">
         <a href="#one" className="more">
-          Learn More
+          Know More
         </a>
       </Scroll>
     </section>
@@ -47,7 +48,10 @@ const IndexPage = () => (
             been learning AI from past 1 year and love making projects on it.
           </p>
         </header>
-        <ul className="icons major">
+
+        <h2 style={{ color: 'white' }}> education</h2>
+        <OppositeContentTimeline />
+        {/* <ul className="icons major">
           <li>
             <span className="icon fa-gem major style1">
               <span className="label">Lorem</span>
@@ -63,7 +67,7 @@ const IndexPage = () => (
               <span className="label">Dolor</span>
             </span>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </section>
 
