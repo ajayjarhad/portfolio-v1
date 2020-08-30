@@ -8,7 +8,8 @@ import pic1 from '../assets/images/pic01.jpg';
 import pic2 from '../assets/images/pic02.jpg';
 import pic3 from '../assets/images/pic03.jpg';
 import config from '../../config';
-import OppositeContentTimeline from '../components/timeline';
+import WorkTimeline from '../components/WorkTimeline';
+import CustomizedTimeline from '../components/CustomizedTimeline';
 const IndexPage = () => (
   <Layout>
     <section id="banner">
@@ -48,9 +49,25 @@ const IndexPage = () => (
             been learning AI from past 1 year and love making projects on it.
           </p>
         </header>
+        <header className="major">
+          <h2 style={{ color: 'white', marginBottom: '4rem' }}>
+            {' '}
+            education timeline
+          </h2>
+          <br />
+          {/* <OppositeContentTimeline /> */}
+          <CustomizedTimeline />
+        </header>
 
-        <h2 style={{ color: 'white' }}> education</h2>
-        <OppositeContentTimeline />
+        <header className="major">
+          <h2
+            style={{ color: 'white', marginTop: '7rem', marginBottom: '4rem' }}
+          >
+            {' '}
+            Work experience timeline
+          </h2>
+          <WorkTimeline />
+        </header>
         {/* <ul className="icons major">
           <li>
             <span className="icon fa-gem major style1">
