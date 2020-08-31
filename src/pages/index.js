@@ -12,6 +12,7 @@ import pic5 from '../assets/images/pic05.jpg';
 import config from '../../config';
 import WorkTimeline from '../components/WorkTimeline';
 import CustomizedTimeline from '../components/CustomizedTimeline';
+import NestedGrid from '../components/Grid';
 const IndexPage = () => (
   <Layout>
     <section id="banner">
@@ -70,6 +71,17 @@ const IndexPage = () => (
           </h2>
           <WorkTimeline />
         </header>
+
+        <header className="major">
+          <h2
+            style={{ color: 'white', marginTop: '7rem', marginBottom: '4rem' }}
+          >
+            {' '}
+            My Skills
+          </h2>
+          <NestedGrid />
+        </header>
+
         {/* <ul className="icons major">
           <li>
             <span className="icon fa-gem major style1">
