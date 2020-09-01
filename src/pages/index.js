@@ -12,6 +12,17 @@ import config from '../../config';
 import WorkTimeline from '../components/WorkTimeline';
 import CustomizedTimeline from '../components/CustomizedTimeline';
 import Contact from '../components/Contact';
+import SimpleTimeline from '../components/SimpleTimeline';
+import StarIcon from '@material-ui/icons/Star';
+
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import SchoolIcon from '@material-ui/icons/School';
+import WorkIcon from '@material-ui/icons/Work';
+
 const IndexPage = () => (
   <Layout>
     <section id="banner">
@@ -45,12 +56,88 @@ const IndexPage = () => (
         <header className="major">
           <h2 style={{ color: 'white', marginBottom: '4rem' }}>
             {' '}
-            education timeline
+            Education and Work experience timeline
           </h2>
           <br />
-          <CustomizedTimeline />
-        </header>
 
+          <VerticalTimeline>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{ background: '#101820FF', color: '#fff' }}
+              contentArrowStyle={{
+                borderRight: '7px solid  rgb(33, 150, 243)',
+              }}
+              date="2021(Expected)"
+              iconStyle={{ background: '#101820FF', color: '#fff' }}
+              icon={<SchoolIcon />}
+            >
+              <h3 className="vertical-timeline-element-title">BE | SPPU</h3>
+
+              <p>
+                Pursuing BE in Computer Engineering from Alard College of
+                Engineering, Pune. Currently in final year scored 8.48 SGPA in
+                third year.
+              </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{ background: '#101820FF', color: '#fff' }}
+              contentArrowStyle={{
+                borderRight: '7px solid  rgb(33, 150, 243)',
+              }}
+              date="August 2020 - Present"
+              iconStyle={{ background: '#FEE715FF', color: '#fff' }}
+              icon={<WorkIcon />}
+            >
+              <h3 className="vertical-timeline-element-title">
+                Junior Engineer Intern
+              </h3>
+
+              <p>
+                Started working at MoPharma Digital Solutions Pvt Limited as an
+                intern.
+              </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{ background: '#101820FF', color: '#fff' }}
+              date="2017"
+              iconStyle={{ background: '#101820FF', color: '#fff' }}
+              icon={<SchoolIcon />}
+            >
+              <h3 className="vertical-timeline-element-title">
+                Diploma | MSBTE
+              </h3>
+              <p>
+                Completed diploma in Computer Engineering from Y.B. Patil
+                Polytechnic, Akurdi. Scored 74.13% aggregate.
+              </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{ background: '#101820FF', color: '#fff' }}
+              date="2013"
+              iconStyle={{ background: '#101820FF', color: '#fff' }}
+              icon={<WorkIcon />}
+            >
+              <h3 className="vertical-timeline-element-title">
+                High School | SSC
+              </h3>
+
+              <p>
+                Completed high school from SNBP International School in SSC
+                board. Scored 78.55%.
+              </p>
+            </VerticalTimelineElement>
+            {/* <VerticalTimelineElement
+              iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+              icon={<StarIcon />}
+            /> */}
+          </VerticalTimeline>
+
+          {/* <CustomizedTimeline /> */}
+        </header>
+        {/* 
         <header className="major">
           <h2
             style={{ color: 'white', marginTop: '7rem', marginBottom: '4rem' }}
@@ -59,7 +146,7 @@ const IndexPage = () => (
             Work experience timeline
           </h2>
           <WorkTimeline />
-        </header>
+        </header> */}
 
         <header className="major">
           <h2
