@@ -1,9 +1,8 @@
 import React from 'react';
-
 import Layout from '../components/Layout';
-
 import Scroll from '../components/Scroll';
-
+import PhoneInTalkIcon from '@material-ui/icons/PhoneInTalk';
+import EmailIcon from '@material-ui/icons/Email';
 import pic1 from '../assets/images/pic01.jpg';
 import pic2 from '../assets/images/pic02.jpg';
 import pic3 from '../assets/images/pic03.jpg';
@@ -12,22 +11,13 @@ import pic5 from '../assets/images/pic05.jpg';
 import config from '../../config';
 import WorkTimeline from '../components/WorkTimeline';
 import CustomizedTimeline from '../components/CustomizedTimeline';
-import NestedGrid from '../components/Grid';
+import Contact from '../components/Contact';
 const IndexPage = () => (
   <Layout>
     <section id="banner">
       <div className="inner">
         <h2>{config.heading}</h2>
         <p>{config.subHeading}</p>
-        {/* <ul className="actions special">
-          <li>
-            <Scroll type="id" element="one">
-              <a href="/#" className="button primary">
-                Explore
-              </a>
-            </Scroll>
-          </li>
-        </ul> */}
       </div>
       <Scroll type="id" element="one">
         <a href="#one" className="more">
@@ -58,7 +48,6 @@ const IndexPage = () => (
             education timeline
           </h2>
           <br />
-          {/* <OppositeContentTimeline /> */}
           <CustomizedTimeline />
         </header>
 
@@ -79,42 +68,69 @@ const IndexPage = () => (
             {' '}
             My Skills
           </h2>
-          <NestedGrid />
+          <div className="skills">
+            <div className="particularSkill">
+              <h2>Frontend development</h2>
+              <br />
+              <p>HTML, CSS, JavaScript, jQuery, React.js, Gatsby.js</p>
+            </div>
+
+            <div className="particularSkill">
+              <h2>Backend development</h2>
+              <br />
+              <p>
+                Node.js, Express.js, Django,Php
+                <br />
+              </p>
+            </div>
+
+            <div className="particularSkill">
+              <h2>Database</h2>
+              <br />
+              <p>
+                MySQL, PostgreSQL, MangoDB
+                <br />
+              </p>
+            </div>
+
+            <div className="particularSkill">
+              <h2>Programming Languages</h2>
+              <br />
+              <p>
+                C, C++, Java, JavaScript, Python, Php
+                <br />
+              </p>
+            </div>
+
+            <div className="particularSkill">
+              <h2>Graphics Designing</h2>
+              <br />
+              <p>
+                Adobe Illustrator, Adobe Photoshop, Figma, Gimp
+                <br />
+              </p>
+            </div>
+          </div>
         </header>
 
-        {/* <ul className="icons major">
-          <li>
-            <span className="icon fa-gem major style1">
-              <span className="label">Lorem</span>
-            </span>
-          </li>
-          <li>
-            <span className="icon fa-heart major style2">
-              <span className="label">Ipsum</span>
-            </span>
-          </li>
-          <li>
-            <span className="icon solid fa-code major style3">
-              <span className="label">Dolor</span>
-            </span>
-          </li>
-        </ul> */}
+        <a href="#" className="button primary">
+          Download Resume
+        </a>
       </div>
     </section>
 
     <section id="two" className="wrapper alt style2">
-      {/* <h2
+      <header
+        className="major"
         style={{
-          color: 'white',
           display: 'flex',
+          width: '100%',
           justifyContent: 'center',
-
-          borderBottom: '1px solid white',
+          paddingTop: '4rem',
         }}
       >
-        {' '}
-        Some of my apps and websites
-      </h2> */}
+        <h2>Some of my projects and websites</h2>
+      </header>
 
       <section className="spotlight">
         <div className="image">
@@ -252,86 +268,35 @@ const IndexPage = () => (
       </section>
     </section>
 
-    <section id="three" className="wrapper style3 special">
-      <div className="inner">
-        <header className="major">
-          <h2>Accumsan mus tortor nunc aliquet</h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
-            <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
-          </p>
-        </header>
-        <ul className="features">
-          <li className="icon fa-paper-plane">
-            <h3>Arcu accumsan</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon solid fa-laptop">
-            <h3>Ac Augue Eget</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon solid fa-code">
-            <h3>Mus Scelerisque</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon solid fa-headphones-alt">
-            <h3>Mauris Imperdiet</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon fa-heart">
-            <h3>Aenean Primis</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon fa-flag">
-            <h3>Tortor Ut</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-        </ul>
+    <section className="contact">
+      <header
+        className="major"
+        style={{
+          display: 'flex',
+          width: '100%',
+          justifyContent: 'center',
+        }}
+      >
+        <h2>Get in touch</h2>
+      </header>
+      <div className="form">
+        <Contact />
       </div>
-    </section>
-
-    <section id="cta" className="wrapper style4">
-      <div className="inner">
-        <header>
-          <h2>Arcue ut vel commodo</h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet
-            eleifend fringilla.
-          </p>
-        </header>
-        <ul className="actions stacked">
-          <li>
-            <a href="/#" className="button fit primary">
-              Activate
-            </a>
-          </li>
-          <li>
-            <a href="/#" className="button fit">
-              Learn More
-            </a>
-          </li>
-        </ul>
+      <div className="personal">
+        <PhoneInTalkIcon />{' '}
+        <a
+          href="tel:+9195034 84682"
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+          }}
+        >
+          +91-9503484682
+        </a>{' '}
+        <br />
+        <br />
+        <EmailIcon />{' '}
+        <a href="mailto:ajayjarhad1@gmail.com">ajayjarhad1@gmail.com</a>
       </div>
     </section>
   </Layout>
