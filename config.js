@@ -11,7 +11,7 @@ module.exports = {
   pathPrefix: `/`, // This path is subpath of your hosting https://domain/portfolio
   heading: 'Ajay Jarhad',
   subHeading:
-    'I am a ful stack web developer and a final year computer engineering student.  ',
+    'Full stack web developer and a final year computer engineering student from Pune,Maharashtra.  ',
   // social
   socialLinks: [
     {
