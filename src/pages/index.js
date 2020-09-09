@@ -216,7 +216,10 @@ const IndexPage = () => (
           </div>
         </header>
 
-        <a href="#" className="button primary">
+        <a
+          href="https://www.ajayjarhad.com/ajay_jarhad_resume_2020.pdf"
+          className="button primary"
+        >
           Download Resume
         </a>
       </div>
