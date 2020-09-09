@@ -10,3 +10,13 @@
   font-weight: bold;
   font-size: larger;
 }
+
+.vertical-timeline:before {
+  content: '';
+  position: absolute;
+  top: auto !important;
+  left: 18px;
+  height: 90% !important;
+  width: 4px;
+  background: #fff;
+}
