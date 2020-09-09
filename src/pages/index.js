@@ -48,7 +48,7 @@ const IndexPage = () => (
             since. I have worked in my family business as a web developer for
             last 8 years, in those times I worked on plenty of web designing
             project that propelled my passion to pursue engineering and make it
-            my full-time occupation
+            my full-time occupation.
           </p>
         </header>
         <header className="major">
