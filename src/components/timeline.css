@@ -30,5 +30,18 @@
   top: 6px;
   font-size: 16px;
   font-size: 1.2rem !important;
-  text-align: left !important;
+  text-align: left;
+}
+
+.vertical-timeline--two-columns
+  .vertical-timeline-element.vertical-timeline-element--right
+  .vertical-timeline-element-content
+  .vertical-timeline-element-date,
+.vertical-timeline--two-columns
+  .vertical-timeline-element:nth-child(2n):not(.vertical-timeline-element--left)
+  .vertical-timeline-element-content
+  .vertical-timeline-element-date {
+  left: auto;
+  right: 124%;
+  text-align: right;
 }
