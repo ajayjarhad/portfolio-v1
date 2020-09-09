@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{w2l6:function(e,a,t){"use strict";t.r(a);var n=t("q1tI"),l=t.n(n),r=t("7oih");a.default=function(){return l.a.createElement(r.a,null,l.a.createElement("article",{id:"main"},l.a.createElement("header",null,l.a.createElement("h2",null,"Not Found"),l.a.createElement("p",null,"Not a Valid URL"),l.a.createElement("a",{href:"https://www.ajayjarhad.com/",className:"button primary"},"Go Back"))))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-7581be4aaa871d8e68e5.js.map

@@ -1,17 +1,17 @@
 module.exports = {
   siteTitle: 'Ajay Jarhad | Portfolio', // <title>
   manifestName: 'Portfolio ',
-  manifestShortName: 'v1', // max 12 characters
+  manifestShortName: 'Portfolio', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
 
-  pathPrefix: `/`, // This path is subpath of your hosting https://domain/portfolio
+  pathPrefix: `/`,
   heading: 'Ajay Jarhad',
   subHeading:
-    'Full stack web developer and a final year computer engineering student from Pune,Maharashtra.  ',
+    'Full stack Engineer | Computer Engineering undergrad from Pune,Maharashtra.  ',
   // social
   socialLinks: [
     {

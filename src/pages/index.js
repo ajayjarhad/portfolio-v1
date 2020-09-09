@@ -9,10 +9,7 @@ import pic3 from '../assets/images/pic03.webp';
 import pic4 from '../assets/images/pic04.webp';
 import pic5 from '../assets/images/pic05.webp';
 import config from '../../config';
-import WorkTimeline from '../components/WorkTimeline';
-import CustomizedTimeline from '../components/CustomizedTimeline';
 import Contact from '../components/Contact';
-import SimpleTimeline from '../components/SimpleTimeline';
 import StarIcon from '@material-ui/icons/Star';
 
 import {
@@ -45,12 +42,12 @@ const IndexPage = () => (
             <br />
           </h2>
           <p>
-            I am Ajay, I am a final year student of computer engineering. I
-            started programming when I was 16 years old and fell in love with it
-            ever since. I have worked in my family business as a web developer
-            for last 8 years, in those times I worked on plenty of web designing
-            project to propel my passion for full stack web development. I have
-            been learning AI from past 1 year and love making projects on it.
+            I am a final year student of computer engineering. I started
+            programming when I was 16 years old and fell in love with it ever
+            since. I have worked in my family business as a web developer for
+            last 8 years, in those times I worked on plenty of web designing
+            project that propelled my passion to pursue engineering and make it
+            my full-time occupation
           </p>
         </header>
         <header className="major">
@@ -67,7 +64,7 @@ const IndexPage = () => (
               contentArrowStyle={{
                 borderRight: '7px solid  rgb(33, 150, 243)',
               }}
-              date="2021(Expected)"
+              date="2021"
               iconStyle={{ background: '#101820FF', color: '#fff' }}
               icon={<SchoolIcon />}
             >
@@ -90,7 +87,7 @@ const IndexPage = () => (
               icon={<WorkIcon />}
             >
               <h3 className="vertical-timeline-element-title">
-                Junior Engineer Intern
+                Full Stack Engineer Intern
               </h3>
 
               <p>
@@ -129,10 +126,10 @@ const IndexPage = () => (
                 board. Scored 78.55%.
               </p>
             </VerticalTimelineElement>
-            {/* <VerticalTimelineElement
-              iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+            <VerticalTimelineElement
+              iconStyle={{ background: 'rgb(254, 231, 21)', color: '#fff' }}
               icon={<StarIcon />}
-            /> */}
+            />
           </VerticalTimeline>
 
           {/* <CustomizedTimeline /> */}
@@ -150,7 +147,7 @@ const IndexPage = () => (
 
         <header className="major">
           <h2
-            style={{ color: 'white', marginTop: '7rem', marginBottom: '4rem' }}
+            style={{ color: 'white', marginTop: '1rem', marginBottom: '4rem' }}
           >
             {' '}
             My Skills
@@ -185,6 +182,24 @@ const IndexPage = () => (
               <br />
               <p>
                 C, C++, Java, JavaScript, Python, Php
+                <br />
+              </p>
+            </div>
+
+            <div className="particularSkill">
+              <h2>Mobile Application Development</h2>
+              <br />
+              <p>
+                React Native, Android Studio
+                <br />
+              </p>
+            </div>
+
+            <div className="particularSkill">
+              <h2>Cloud Computing</h2>
+              <br />
+              <p>
+                Heroku, Netlify, AWS
                 <br />
               </p>
             </div>
