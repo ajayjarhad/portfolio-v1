@@ -173,7 +173,7 @@ const IndexPage = () => (
               <h2>Database</h2>
               <br />
               <p>
-                MySQL, PostgreSQL, MangoDB
+                MySQL, PostgreSQL, MangoDB, Redis
                 <br />
               </p>
             </div>
