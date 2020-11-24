@@ -77,7 +77,7 @@ const IndexPage = () => (
                 third year.
               </p>
             </VerticalTimelineElement>
-            <VerticalTimelineElement
+            {/* <VerticalTimelineElement
               className="vertical-timeline-element--work"
               contentStyle={{ background: '#101820FF', color: '#fff' }}
               contentArrowStyle={{
@@ -95,7 +95,7 @@ const IndexPage = () => (
                 Started working at MoPharma Digital Solutions Pvt Limited as an
                 intern.
               </p>
-            </VerticalTimelineElement>
+            </VerticalTimelineElement> */}
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
               contentStyle={{ background: '#101820FF', color: '#fff' }}
