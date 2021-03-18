@@ -273,7 +273,7 @@ const IndexPage = () => (
           <p>
             The app is designed using React.js with Redux as a frontend
             framework with Node.js and Express.js as backend. It uses PostgreSQL
-            to manage users.
+            to manage users. The app's backend is hosted on AWS as a docker container. The app uses redis for session management and uses AWS Lambda function for trophy assignment.
           </p>
           <div
             style={{
@@ -316,7 +316,7 @@ const IndexPage = () => (
             }}
           >
             <a
-              href="https://covid-19-tracker-reactjs.herokuapp.com/"
+              href="https://covidtracker.ajayjarhad.com/"
               className="button primary"
               style={{ marginTop: '-1em' }}
             >
