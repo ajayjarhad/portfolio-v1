@@ -283,7 +283,7 @@ const IndexPage = () => (
             }}
           >
             <a
-              href="https://face-recongnition-ai.herokuapp.com/"
+              href="https://facedetection.ajayjarhad.com"
               className="button primary"
               style={{ marginTop: '-1em' }}
             >
